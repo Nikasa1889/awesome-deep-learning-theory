@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-* **[Generalization Bound](#generalization-bound)**  
+* **[I. Generalization Bound](#i-generalization-bound)**  
 
-* **[Loss Surface and Local Minima](#loss-surface-and-local-minima)**  
+* **[II. Loss Surface and Local Minima](#ii-loss-surface-and-local-minima)**  
 
-* **[Regularizations: Compression, Noise, Sparsity, Distillation](#regularizations)**  
+* **[III. Regularizations: Compression, Noise, Sparsity, Distillation](#iii-regularizations)**  
 
-### Generalization Bound
+### I. Generalization Bound
 
-### Loss Surface and Local Minima
+### II. Loss Surface and Local Minima
 
-### Regularizations
+### III. Regularizations
