@@ -8,8 +8,12 @@
 
 * **[III. Regularizations: Compression, Noise, Sparsity, Distillation](#iii-regularizations)**  
 
+* **[Important Researchers](#iv-important-researchers)**
+
 ### I. Generalization Bound
 
 ### II. Loss Surface and Local Minima
 
 ### III. Regularizations
+
+### Important Researchers
