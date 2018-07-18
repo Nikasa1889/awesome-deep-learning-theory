@@ -22,7 +22,6 @@ Notes:
   - The hard problem of learning: learning program is hard (difficult loss function)
   - Big question: How to connect Symbolic representations and Neural Nets?
 
-
 ### Papers at ICML 2018
 
  #### 1. [Learning to Explain: An Information-Theoretic Perspective on Model Interpretation](http://proceedings.mlr.press/v80/chen18j.html)
@@ -105,9 +104,17 @@ Notes:
   - Study the number of linear regions, i.e. pieces, that a PWL function represented by a DNN can attain, both theoretically and empirically.
   - Tighter upper and lower bounds for the maximum number of linear regions on rectifier networks.
   - Indicate that a deep rectifier network can only have more linear regions than every shallow counterpart with same number of neurons if that number exceeds the dimension of the input.
+  
  #### 15. [A Theoretical Explanation for Perplexing Behaviors of Backpropagation-based Visualizations](http://proceedings.mlr.press/v80/nie18a.html)
   Materials: [pdf](http://proceedings.mlr.press/v80/nie18a/nie18a.pdf), [supp](http://proceedings.mlr.press/v80/nie18a/nie18a-supp.pdf)
   - Backpropagation-based visualizations have been proposed to interpret convolutional neural networks (CNNs), however a theory is missing to justify their behaviors.
   - Develop a theoretical explanation revealing that GBP and DeconvNet are essentially doing (partial) image recovery which is unrelated to the network decisions.
 
+### 16. [The Mechanics of n-Player Differentiable Games](http://proceedings.mlr.press/v80/balduzzi18a.html) - Runner Up
+  Materials: [pdf](http://proceedings.mlr.press/v80/balduzzi18a/balduzzi18a.pdf), [supp](http://proceedings.mlr.press/v80/balduzzi18a/balduzzi18a-supp.pdf)
+  - Everything in DL (CNN, LSTM, Relu, Resnet...) depends on Gradient Descent finds (good) local minima
+  - In GANs, where there are multiple interacting losses, the behavior of gradient-based methods in games is not well understood – and is becoming increasingly important as adversarial and multi-objective architectures proliferate.
+  - Develop new techniques to understand and control the dynamics in general games -> decompose the second-order dynamics into two components. The first is related to potential games, which reduce to gradient descent on an implicit function; the second relates to Hamiltonian games, a new class of games that obey a conservation law, akin to conservation laws in **classical mechanical systems**. 
+  - Propose Symplectic Gradient Adjustment (SGA), a new algorithm for finding stable fixed points in general games.
+  - SGA is competitive for finding Local Nash equilibria in GANs.
 ### Important Researchers
