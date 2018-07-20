@@ -112,9 +112,10 @@ Notes:
 
 ### 16. [The Mechanics of n-Player Differentiable Games](http://proceedings.mlr.press/v80/balduzzi18a.html) - Runner Up
   Materials: [pdf](http://proceedings.mlr.press/v80/balduzzi18a/balduzzi18a.pdf), [supp](http://proceedings.mlr.press/v80/balduzzi18a/balduzzi18a-supp.pdf)
-  - Everything in DL (CNN, LSTM, Relu, Resnet...) depends on Gradient Descent finds (good) local minima
-  - In GANs, where there are multiple interacting losses, the behavior of gradient-based methods in games is not well understood – and is becoming increasingly important as adversarial and multi-objective architectures proliferate.
-  - Develop new techniques to understand and control the dynamics in general games -> decompose the second-order dynamics into two components. The first is related to potential games, which reduce to gradient descent on an implicit function; the second relates to Hamiltonian games, a new class of games that obey a conservation law, akin to conservation laws in **classical mechanical systems**. 
-  - Propose Symplectic Gradient Adjustment (SGA), a new algorithm for finding stable fixed points in general games.
-  - SGA is competitive for finding Local Nash equilibria in GANs.
+  - Context: Everything in DL (CNN, LSTM, Relu, Resnet...) depends on Gradient Descent to find (good) local minima. This fails in setting as of game for GAN model where there are multiple interacting losses.
+  - Problem: This paper analyzes why GD fails in multiple interacting losses games like GAN and propose a way to modify/construct loss to make GD succeed.
+  - Approach: 
+    - Decompose the second-order dynamics into two components. The first is related to potential games, which reduces to gradient descent on an implicit function; the second relates to Hamiltonian games, a new class of games that obey a conservation law, akin to conservation laws in **classical mechanical systems**. 
+    - Propose Symplectic Gradient Adjustment (SGA), a new algorithm for finding stable fixed points in general games.
+  - Result: SGA is competitive for finding Local Nash equilibria in GANs.
 ### Important Researchers
